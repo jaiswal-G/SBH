@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asset Details</title>
+    <link rel="stylesheet" href="asset-styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="asset-details.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="landing-index.html"><img src="assets/logo.png" alt="Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="landing-index.html">Back to Landing Page</a></li>
+                <li><a href="main-index.html">Go to Main Page</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="asset-details">
+        <h1>Asset Details</h1>
+        
+        <div id="asset-form">
+            <input type="text" id="asset-type" placeholder="Asset Type" required>
+            <input type="date" id="installation-date" required>
+            <input type="date" id="maintenance-date" required>
+            <button id="add-asset">Add Asset</button>
+        </div>
+
+        <table id="asset-table">
+            <thead>
+                <tr>
+                    <th>Asset Type</th>
+                    <th>Installation Date</th>
+                    <th>Last Maintenance Date</th>
+                    <th>Usage Graph</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pump</td>
+                    <td>2021-01-15</td>
+                    <td>2023-02-10</td>
+                    <td><button class="view-graph" data-type="pump">View Graph</button></td>
+                    <td><button class="delete-asset">Remove</button></td>
+                </tr>
+                <tr>
+                    <td>Pipeline</td>
+                    <td>2020-05-20</td>
+                    <td>2023-01-25</td>
+                    <td><button class="view-graph" data-type="pipeline">View Graph</button></td>
+                    <td><button class="delete-asset">Remove</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="graph-section" class="hidden">
+            <button id="back-button">Back</button>
+            <canvas id="usageGraph"></canvas>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Company Name. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Management</title>
+    <link rel="stylesheet" href="finance-styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/logo.png" alt="Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="main-index.html">Back to Main Page</a></li>
+                <li><a href="finances.html">Finance Overview</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="finance-details">
+        <h1>Finance Overview</h1>
+        <table id="finance-table">
+            <thead>
+                <tr>
+                    <th>Asset Type</th>
+                    <th>Initial Cost</th>
+                    <th>Installation Cost</th>
+                    <th>Maintenance Cost</th>
+                    <th>Renewable Cost</th>
+                    <th>Electricity Consumed (kWh)</th>
+                    <th>Electricity Cost</th>
+                </tr>
+            </thead>
+            <tbody id="finance-body">
+                <!-- Data will be inserted here dynamically -->
+            </tbody>
+        </table>
+        
+        <div class="totals">
+            <p><strong>Total Expenses for 1 Year:</strong> <span id="total-expenses">$0</span></p>
+            <p><strong>Total Cost of All Assets:</strong> <span id="total-cost">$0</span></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Company Name. All Rights Reserved.</p>
+    </footer>
+
+    <script src="finance-script.js"></script>
+</body>
+</html>

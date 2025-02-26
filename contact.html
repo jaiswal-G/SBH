@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact-styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="Logo">
+                </a>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links">
+                <li><a href="main-index.html" class="active">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>We’d love to hear from you! Feel free to reach out using the details below.</p>
+
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h3>📍 Address</h3>
+                    <p>123 Water Street, New Delhi, India</p>
+                </div>
+                <div class="contact-card">
+                    <h3>📞 Phone</h3>
+                    <p>+91 98765 43210</p>
+                    <p>+91 87654 32109</p>
+                </div>
+                <div class="contact-card">
+                    <h3>📧 Email</h3>
+                    <p>support@watersupply.com</p>
+                    <p>info@watersupply.com</p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <form id="contact-form">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
+
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Water Supply Management. All Rights Reserved.</p>
+    </footer>
+
+    <script src="contact-script.js"></script>
+</body>
+</html>
